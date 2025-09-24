@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    double z, y, c, a, b, fi;
+    double z, y, c, a, b, fi, exp;
     int x;
 
     cout << "type z\n";
@@ -20,15 +20,15 @@ int main()
     if (z < 0) {
         switch (x) {
         case 1:
-            y = (2 / 3) * a * pow(sin(z), 2) - ((3 * b) / 4) * pow(cos(2 * z * fi), 2);
+            exp = 2 * z * fi;
             break;
 
         case 2:
-            y = (2 / 3) * a * pow(sin(z), 2) - ((3 * b) / 4) * pow(cos(pow(z, 2) * fi), 2);
+            exp = pow(z, 2) * fi;
             break;
 
         case 3:
-            y = (2 / 3) * a * pow(sin(z), 2) - ((3 * b) / 4) * pow(cos(z / 3 * fi), 2);
+            exp = z / 3. * fi;
             break;
 
         default:
@@ -39,15 +39,15 @@ int main()
     else{
         switch (x) {
         case 1:
-            y = (2 / 3) * a * pow(sin(z), 2) - ((3 * b) / 4) * pow(cos(2 * sin(z) * fi), 2);
+            exp = 2 * sin(z) * fi;
             break;
 
         case 2:
-            y = (2 / 3) * a * pow(sin(z), 2) - ((3 * b) / 4) * pow(cos(pow(sin(z), 2) * fi), 2);
+            exp = pow(sin(z), 2) * fi;
             break;
 
         case 3:
-            y = (2 / 3) * a * pow(sin(z), 2) - ((3 * b) / 4) * pow(cos(sin(z) / 3 * fi), 2);
+            exp = sin(z) / 3. * fi;
             break;
 
         default:
@@ -55,6 +55,9 @@ int main()
             return 0;
         }
     }
+
+    y = (2. / 3.) * a * pow(sin(z), 2) - ((3 * b) / 4) * pow(cos(exp), 2);
+
 
     cout << "result: " << y;
 }
