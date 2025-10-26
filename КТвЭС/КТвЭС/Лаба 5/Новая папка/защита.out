@@ -1,0 +1,56 @@
+
+**** 12/05/24 09:36:14 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ZASHITA_4_5
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+V 1 0 PULSE(0 10 0.1u 0.1u 0.1u 30MS 60MS)
+R1 1 2 300
+R3 2 3 100
+R2 4 0 60
+L 3 4 0.18H
+C 4 0 1UF
+.TRAN 10MS 60MS 0.1u 0.1u
+.PROBE
+.END
+
+**** 12/05/24 09:36:14 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ZASHITA_4_5
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    1)    0.0000  (    2)    0.0000  (    3)    0.0000  (    4)    0.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V            0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME           44.42
+

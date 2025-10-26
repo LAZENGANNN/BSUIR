@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\BSUIR\\c_c\u002B\u002B\\lab6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DD966454-B3AC-4D79-AFCE-515C68AFBCF1}|lab6\\lab6.vcxproj|E:\\BSUIR\\c_c\u002B\u002B\\lab6\\lab6\\lab6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD966454-B3AC-4D79-AFCE-515C68AFBCF1}|lab6\\lab6.vcxproj|solutionrelative:lab6\\lab6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "lab6.cpp",
+              "DocumentMoniker": "E:\\BSUIR\\c_c\u002B\u002B\\lab6\\lab6\\lab6.cpp",
+              "RelativeDocumentMoniker": "lab6\\lab6.cpp",
+              "ToolTip": "E:\\BSUIR\\c_c\u002B\u002B\\lab6\\lab6\\lab6.cpp",
+              "RelativeToolTip": "lab6\\lab6.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-21T09:15:22.921Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+﻿  lab5.cpp
+E:\BSUIR\c_c++\lab5\lab5\lab5.cpp(22,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+E:\BSUIR\c_c++\lab5\lab5\lab5.cpp(9,14): warning C4101: op: неиспользованная локальная переменная
+  lab5.vcxproj -> E:\BSUIR\c_c++\lab5\x64\Debug\lab5.exe

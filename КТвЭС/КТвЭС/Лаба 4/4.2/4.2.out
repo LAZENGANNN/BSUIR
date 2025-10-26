@@ -1,0 +1,56 @@
+
+**** 11/12/24 14:15:17 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ LABA 3.2
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+V 1 0 PULSE(0 40 0.1u 0.1u 0.1u 10MS 20MS)
+R2 2 3 740
+R3 4 3 140
+L1 1 2 58MH
+L2 3 0 58MH
+C3 2 4 40.5UF
+.TRAN 10MS 20MS
+.PROBE
+.END
+
+**** 11/12/24 14:15:17 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ LABA 3.2
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    1)    0.0000  (    2)    0.0000  (    3)    0.0000  (    4)    0.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V            0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

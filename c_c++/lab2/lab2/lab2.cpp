@@ -5,56 +5,47 @@ using namespace std;
 
 int main()
 {
-    double z, y, c, a, b, fi;
-    int x;
+    double z, y, a, b, x, expr;
+    int f;
 
-    cout << "type z\n";
-    cin >> z;
+        cout << "type a, b\n";
+        cin >> a >> b;
 
-    cout << "type a, b, fi\n";
-    cin >> a >> b >> fi;
+        cout << "type z\n";
+        cin >> z;
 
-    cout << "chose X \n 1) 2x\n 2) x^2 \n 3) x/3 \n";
-    cin >> x;
+        if (z < 0) {
+            cout << "z<0 => x=z" << endl;
+            x = z;
+        }
+        else {
+            cout << "z>=0 => x=sin(z)";
+            x = sin(z);
+        }
 
-    if (z < 0) {
-        switch (x) {
+        cout << "\n select function \n 1) 2x (default)\n 2) x^2 \n 3) x/3 \n";
+        cin >> f;
+
+        switch (f) {
+        default:
+            cout << "Wrong choose" << endl;
         case 1:
-            y = (2 / 3) * a * pow(sin(z), 2) - ((3 * b) / 4) * pow(cos(2 * z * fi), 2);
+            cout << "2x selected";
+            expr = 2 * x;
             break;
 
         case 2:
-            y = (2 / 3) * a * pow(sin(z), 2) - ((3 * b) / 4) * pow(cos(pow(z, 2) * fi), 2);
+            cout << "x^2 selected";
+            expr = x * x;
             break;
 
         case 3:
-            y = (2 / 3) * a * pow(sin(z), 2) - ((3 * b) / 4) * pow(cos(z / 3 * fi), 2);
+            cout << "x/3 selected";;
+            expr = x / 3.;
             break;
-
-        default:
-            cout << "wrong X";
-            return 0;
         }
-    }
-    else{
-        switch (x) {
-        case 1:
-            y = (2 / 3) * a * pow(sin(z), 2) - ((3 * b) / 4) * pow(cos(2 * sin(z) * fi), 2);
-            break;
 
-        case 2:
-            y = (2 / 3) * a * pow(sin(z), 2) - ((3 * b) / 4) * pow(cos(pow(sin(z), 2) * fi), 2);
-            break;
+        y = 2. / 3. * a * pow(sin(x), 2) - 3 * b / 4 * pow(cos(expr), 2);
 
-        case 3:
-            y = (2 / 3) * a * pow(sin(z), 2) - ((3 * b) / 4) * pow(cos(sin(z) / 3 * fi), 2);
-            break;
-
-        default:
-            cout << "wrong X";
-            return 0;
-        }
-    }
-
-    cout << "result: " << y;
+        cout << "\n result: " << y << endl;
 }
